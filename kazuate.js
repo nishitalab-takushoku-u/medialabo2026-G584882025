@@ -13,14 +13,38 @@ let kaisu = 0;
 function hantei() {
   // ここから: 予想回数を1増やして，span#kaisu 要素のテキストを更新
   kaisu = kaisu + 1;
+  let span = document.querySelector('span#kaisu');
+  span.textContent = kaisu;
   // ここまで: 予想回数を1増やして，span#kaisu 要素のテキストを更新
   
+
   // ここから: テキストボックスに指定された数値を yoso に代入する
   let yoso = document.querySelector('input#yosou');
   // ここまで: テキストボックスに指定された数値を yoso に代入する
-  
-  // ここから: 正解判定する
+  yoso = yoso.value;
+  yoso = Number(yoso);
 
+  // ここから: 正解判定する
+  let result = document.querySelector('p#result');
+  if(kaisu <= 2){
+    if(kotae === yoso){
+      result.textContent = "正解です．おめでとう!";
+      kaisu = 4;
+    }else if(kotae < yoso){
+      result.textContent = "まちがい．答えはもっと小さいですよ";
+    }else if(kotae > yoso){
+      result.textContent = "まちがい．答えはもっと大きいですよ";
+    }
+  }else if(kaisu === 3){
+    if(kotae === yoso){
+      result.textContent = "正解です．おめでとう!";
+      kaisu = 4;
+    }else{
+      result.textContent = "まちがい．残念でした答えは " + kotae + " です．";
+    }
+  }else{
+    result.textContent = "答えは " + kotae + " でした．すでにゲームは終わっています";
+  }
   // 　　　　  正解/不正解のときのメッセージを表示する
 
   // ここまで: 正解判定する
