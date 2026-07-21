@@ -1,13 +1,67 @@
-<!-- 課題1-4: プロジェクト課題の検索結果を表示する HTML をここに記述してください．-->
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>プロジェクト課題</title>
+    <link rel="stylesheet" href="project.css">
 
-    <script src="tv-program.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="weather.js" defer></script>
   </head>
 
   <body>
+
+    <fieldset>
+      <legend>どの地域の予報を見ますか</legend>
+      <div>
+      <input type="radio" name="timei" class="timei" value='360630'>
+      <label for="地名">Cairo カイロ （エジプト）</label>
+    </div>
+    <div>
+      <input type="radio" name="timei" class="timei" value='524901'>
+      <label for="地名">Moscow モスクワ （ロシア）</label>
+    </div>
+    <div>
+      <input type="radio" name="timei" class="timei" value='993800'>
+      <label for="地名">Johannesburg ヨハネスブルク （南アフリカ）</label>
+    </div>
+    <div>
+      <input type="radio" name="timei" class="timei" value='1816670'>
+      <label for="地名">Beijing 北京 （中華人民共和国）</label>
+    </div>
+    <div>
+      <input type="radio" name="timei" class="timei" value='1850147'>
+      <label for="地名">Tokyo 東京 （日本）</label>
+    </div>
+    <div>
+      <input type="radio" name="timei" class="timei" value='1880252'>
+      <label for="地名">Singapore シンガポール</label>
+    </div>
+    <div>
+      <input type="radio" name="timei" class="timei" value='2147714'>
+      <label for="地名">Sydney シドニー （オーストラリア）</label>
+    </div>
+    <div>
+      <input type="radio" name="timei" class="timei" value='2643743'>
+      <label for="地名">London ロンドン （イギリス）</label>
+    </div>
+    <div>
+      <input type="radio" name="timei" class="timei" value='2968815'>
+      <label for="地名">Paris パリ （フランス）</label>
+    </div>
+    <div>
+      <input type="radio" name="timei" class="timei" value='3451189'>
+      <label for="地名">Rio de Janeiro リオデジャネイロ （ブラジル）</label>
+    </div>
+    <div>
+      <input type="radio" name="timei" class="timei" value='5128581'>
+      <label for="地名">New York ニューヨーク （アメリカ合衆国）</label>
+    </div>
+    <div>
+      <input type="radio" name="timei" class="timei" value='5368361'>
+      <label for="地名">Los Angeles ロサンゼルス （アメリカ合衆国）</label>
+    </div>
+    </fieldset>
+
 
   </body>
 </html>

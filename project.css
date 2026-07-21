@@ -1,0 +1,15 @@
+body {
+    background-color:  black;
+}
+
+fieldset {
+    color: #fff700;
+}
+
+li {
+    text-shadow: -1px 0px 0 white, 1px 0px 0 white, 0px -1px 0 white, 0px 1px 0 white, 1px 1px 0 white, -1px 1px 0 white,1px -1px 0 white,-1px -1px 0 white;
+}
+
+ul {
+    background: linear-gradient(#ff0000, #fff700, #00ff00, #00ddff, #000dff, #8800ff, #ff00cc);
+}
