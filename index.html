@@ -5,55 +5,60 @@
     <title>「Webコンテンツ作成」の成果</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <div>
-    <h1>「Webコンテンツ作成」の成果</h1>
-    <h2>本テーマについて</h2>
-   
-    <h2>プロジェクト課題について</h2>
+  <body>
+    <div>
+      <h1>「Webコンテンツ作成」の成果</h1>
+      <h2>本テーマについて</h2>
+      webページの基本的な記述方法であるHTML、それを装飾するCSS、動きのあるページを作るためのJavaScript、外部サーバと通信する方法について学習することで、webコンテンツ作成の基礎を学ぶ。
+      <h2>プロジェクト課題について</h2>
 
-    <h2>数当てゲーム</h2>
-      実行する内容をhanteiに記述していく。まず、回数によって実行結果を変化させないといけないのでkaisuに1を足してテキストを更新する。その後、テキストボックスに入力された値を数値に変換してからyosoに代入する。ifで回数に応じて結果を3種類に分ける。kaisuが2以下なら、入力した値の正誤と誤りであれば入力した値より上か下か表示する。3の場合は正誤に加えて間違いの場合には正解を表示する。4以上であれば正誤に関わらず答えを表示する。ボタンを押した時にhanteiが実行されるようにquerySelectorでbuttonを指定し、イベントハンドラとしてhanteiを登録する。
-      <p>演習の成果:<a href="kazuate.html"
-       title="数当てゲーム"
-       target="_blank">課題4-1: 数当てゲームの作成</a></p>
+      <h2>数当てゲーム</h2>
+        実行する内容をhanteiに記述していく。まず、回数によって実行結果を変化させないといけないのでkaisuに1を足してテキストを更新する。その後、テキストボックスに入力された値を数値に変換してからyosoに代入する。ifで回数に応じて結果を3種類に分ける。kaisuが2以下なら、入力した値の正誤と誤りであれば入力した値より上か下か表示する。3の場合は正誤に加えて間違いの場合には正解を表示する。4以上であれば正誤に関わらず答えを表示する。ボタンを押した時にhanteiが実行されるようにquerySelectorでbuttonを指定し、イベントハンドラとしてhanteiを登録する。
+        <p>演習の成果:<a href="kazuate.html"
+        title="数当てゲーム"
+        target="_blank">課題4-1: 数当てゲームの作成</a></p>
 
-    <h2>各授業会の学習事項</h2>
-    <div id="zentai">
-      <div>
-        <h3>第１回 WWW と HTML</h3>
-        &lt;&gt;で囲まれた要素の役割、属性について学習した。HTML文書であることを宣言する&lt;!DOCTYPE html&gt;や、文字を強調する&lt;strong&gt;をはじめとした html,p,h1,head,body などの使い方を理解した。
-        <p>演習の成果:<a href="practice-html/elements.html"
-       title="演習1-4"
-       target="_blank">演習1-4: HTMLのさまざまな要素</a></p>
+      <h2>各授業会の学習事項</h2>
+      <div id="zentai">
+        <div>
+          <h3>第１回 WWW と HTML</h3>
+          &lt;&gt;で囲まれた要素の役割、属性について学習した。HTML文書であることを宣言する&lt;!DOCTYPE html&gt;や、文字を強調する&lt;strong&gt;をはじめとした html,p,h1,head,body などの使い方を理解した。
+          <p>演習の成果:<a href="practice-html/elements.html"
+        title="演習1-4"
+        target="_blank">演習1-4: HTMLのさまざまな要素</a></p>
+        </div>
+        <div>
+          <h3>第２回 CSS による Web ページの装飾</h3>
+          CSSの記述を用いて要素それぞれの見た目を装飾する方法を学習した。head要素で外部CSSファイルを指定するとそのファイルの内容に基づいて記述が装飾される。CSSファイルには、〜要素を{〜に設定する}という風に記述する。例：p {color: green;}
+          <p>演習の成果:<a href="practice-css/browser-intro.html"
+        title="演習2-3"
+        target="_blank">演習2-3: ウェブブラウザ説明ページの装飾</a></p>
+        </div>
+        <div>
+          <h3>第３回 JavaScript の基本</h3>
+          JavaScriptの概要とその基本的な構文について学習した。JavaScriptはJavaとは全く違う言語で、その例としてコンパイルがいらな言語である・変数の宣言において型名の宣言がいらないという点が挙げられる。for-of構文はfor (let n of ns)と記述することで、繰り返し i 回目ごとに n に ns[i] の内容そ代入することができる。
+          <p>演習の成果:<a href="practice-js/obj-practice.html"
+        title="演習3-6"
+        target="_blank">演習3-6: オブジェクトの参照</a></p>
+        </div>
+        <div>
+          <h3>第４回 DOM と JavaScript</h3>
+          input要素でユーザ入力が実行できます。type属性を指定することで入力する値の種類を変更することができます。例として、textでテキストボックスが表示され、dateでカレンダーが表示されます。querySelectorでファイル中の指定した要素を検索します。イベントハンドラを記述、登録しておくことでイベントが発生した時にイベントハンドラに記述されたプログラムを実行することができる。
+          <p>演習の成果:<a href="practice-eventdom/tashizan.html"
+        title="演習4-10"
+        target="_blank">演習4-10: 足し算ページ</a></p>
+        </div>
+        <div>
+          <h3>第５回 イベント処理</h3>
+          createElement構文を使うことで先にhtmlに要素を記述しておかなくてもjsが実行された時に新しく要素を追加することができる。要素を検索して、insertAdjacentElement構文で'beforeend’と記述すると検索した要素の内部に追加した要素を配置、'afterend'と記述することで検索した要素の直後に追加した要素を配置することができる。
+          <p>演習の成果:<a href="practice-dom2/dom2-exercise.html"
+        title="演習5-7"
+        target="_blank">演習5-7 DOMプログラミング(2)</a></p>
+        </div>
+        <div>
+          <h3>第６回 プロジェクト課題を完成させよう</h3>
+          あいうえお
+        </div>
       </div>
-      <div>
-        <h3>第２回 CSS による Web ページの装飾</h3>
-        CSSの記述を用いて要素それぞれの見た目を装飾する方法を学習した。head要素で外部CSSファイルを指定するとそのファイルの内容に基づいて記述が装飾される。CSSファイルには、〜要素を{〜に設定する}という風に記述する。例：p {color: green;}
-        <p>演習の成果:<a href="practice-css/browser-intro.html"
-       title="演習2-3"
-       target="_blank">演習2-3: ウェブブラウザ説明ページの装飾</a></p>
-      </div>
-      <div>
-        <h3>第３回 JavaScript の基本</h3>
-        JavaScriptの概要とその基本的な構文について学習した。JavaScriptはJavaとは全く違う言語で、その例としてコンパイルがいらな言語である・変数の宣言において型名の宣言がいらないという点が挙げられる。for-of構文はfor (let n of ns)と記述することで、繰り返し i 回目ごとに n に ns[i] の内容そ代入することができる。
-        <p>演習の成果:<a href="practice-js/obj-practice.html"
-       title="演習3-6"
-       target="_blank">演習3-6: オブジェクトの参照</a></p>
-      </div>
-      <div>
-        <h3>第４回 DOM と JavaScript</h3>
-        input要素でユーザ入力が実行できます。type属性を指定することで入力する値の種類を変更することができます。例として、textでテキストボックスが表示され、dateでカレンダーが表示されます。querySelectorでファイル中の指定した要素を検索します。イベントハンドラを記述、登録しておくことでイベントが発生した時にイベントハンドラに記述されたプログラムを実行することができる。
-        <p>演習の成果:<a href="practice-eventdom/tashizan.html"
-       title="演習4-10"
-       target="_blank">演習4-10: 足し算ページ</a></p>
-      </div>
-      <div>
-        <h3>第５回 イベント処理</h3>
-        createElement構文を使うことで先にhtmlに要素を記述しておかなくてもjsが実行された時に新しく要素を追加することができる。要素を検索して、insertAdjacentElement構文で'beforeend’と記述すると検索した要素の内部に追加した要素を配置、'afterend'と記述することで検索した要素の直後に追加した要素を配置することができる。
-        <p>演習の成果:<a href="practice-dom2/dom2-exercise.html"
-       title="演習5-7"
-       target="_blank">演習5-7 DOMプログラミング(2)</a></p>
-      </div>
-    </div>
   </body>
 </html>
